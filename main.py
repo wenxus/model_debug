@@ -278,11 +278,11 @@ for f0 in [-1, 2]: #confused
 
     # create file if doesnt exist and wrie to it 
 
-    with open("/Users/wenx/Downloads/feature_steer_sweep_all.csv", "w") as f:
+    with open("feature_steer_sweep_all.csv", "w") as f:
         f.write(r + "\n")
 #%%
 # Open the source file for reading and the destination file for writing
-with open("/Users/wenx/Downloads/feature_steer_sweep_all.csv", "r") as infile, open("/Users/wenx/Downloads/feature_steer_sweep_all_processed.csv", "w") as outfile:
+with open("feature_steer_sweep_all.csv", "r") as infile, open("feature_steer_sweep_all_processed.csv", "w") as outfile:
     for line in infile:
         if line.startswith("-1") or line.startswith("2") or line.startswith("f0"):
             # line.replace("2;", "No Steering;")
